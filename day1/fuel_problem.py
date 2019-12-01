@@ -14,22 +14,22 @@ def run():
 
 
 def fuel_requirements(data):
-    sum = 0
-    for val in data:
-        sum += calc_fuel_helper(val, 0)
+    total = 0
+    for item in data:
+        total += fuel_per_item(item, 0)
 
-    return sum
+    return total
 
 
-def calc_fuel_helper(data, sum):
-    res = (data // 3) - 2
+def fuel_per_item(item, total):
+    fuel = (item // 3) - 2
 
-    if res <= 0:
-        return sum
+    if fuel <= 0:
+        return total
 
-    sum += res
+    total += fuel
 
-    return calc_fuel_helper(res, sum)
+    return fuel_per_item(fuel, total)
 
 
 if __name__ == '__main__':
