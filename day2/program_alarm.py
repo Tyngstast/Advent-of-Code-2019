@@ -5,7 +5,7 @@ import os
 
 def run():
     basedir = os.path.abspath(os.path.dirname(__file__))
-    in_file = os.path.join(basedir, 'program_alarm.in')
+    in_file = os.path.join(basedir, 'program_alarm.csv')
 
     with open(in_file) as f:
         reader = csv.reader(f)
