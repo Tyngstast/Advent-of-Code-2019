@@ -3,3 +3,6 @@ Coding problems from Advent of Code 2019.
 
 ### Day 1
 The Tyranny of the Rocket Equation / sum of fuel requirements
+
+### Day 2
+1202 Program Alarm / Intcode program output
