@@ -23,7 +23,7 @@ def run():
 
 
 def visit(wire):
-    step_deltas = {"L": (-1, 0), "R": (1, 0), "U": (0, 1), "D": (0, -1)}
+    step_deltas = {'L': (-1, 0), 'R': (1, 0), 'U': (0, 1), 'D': (0, -1)}
 
     x = 0
     y = 0
